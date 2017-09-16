@@ -12,11 +12,13 @@ MLGProxy is a proxy that allows you to pretend to have mlg code. For example **m
 
 ## Setup
 
+`npm install mlgproxy`
+
 ```js
-const kewlobject = require("../index")({}, options);
+const kewlobject = require("mlgproxy")({}, options);
 ```
 
-## Uage
+## Usage
 
 ```js
 //set a
