@@ -1,8 +1,9 @@
 module.exports = function(object, options = {}) {
   const handler = {
     get: function(target, prop) {
-      let newName = prop.toString().replace("0", "o").replace("3", "e")
-        .replace("4", "a").replace("8", "ate")
+      let newName = prop.toString().replace(/0/g, "o").replace(/3/g,
+          "e")
+        .replace(/4/g, "a").replace(/8/g, "ate")
         .replace(
           /(LO+L|RE+KT)/gi, "");
 
@@ -21,8 +22,8 @@ module.exports = function(object, options = {}) {
       return target[newName];
     },
     set: function(target, prop, value) {
-      let newName = prop.toString().replace("0", "o").replace("3", "e")
-        .replace("4", "a").replace("8", "ate")
+      let newName = prop.toString().replace(/0/g, "o").replace(/3/g, "e")
+        .replace(/4/g, "a").replace(/8/g, "ate")
         .replace(
           /(LO+L|RE+KT)/gi, "");
 
