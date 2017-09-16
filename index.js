@@ -21,6 +21,10 @@ function mlgproxy(object, options = {}) {
         }
       }
 
+      if (typeof target[newName] === "object") {
+        return mlgproxy(target[newName], options);
+      }
+
       return target[newName];
     },
     set: function(target, prop, value) {
@@ -41,9 +45,6 @@ function mlgproxy(object, options = {}) {
         }
       }
 
-      if (typeof value === "object") {
-        return target[newName] = mlgproxy(value, options);
-      }
       return target[newName] = value;
     }
   };

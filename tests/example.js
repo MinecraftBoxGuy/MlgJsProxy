@@ -18,6 +18,8 @@ const kewlerobject = require("../index")({}, options);
 
 //set aI
 kewlerobject.LOOOOOOOOOOOOOOOOOOOOOOOOL4REEEEEKT1 = "hi";
+kewlerobject.m8 = {};
+kewlerobject.m8.m8 = "hia";
 
 //get aI
 console.log(kewlerobject.LOOOOOOOOOOOOOOOOOOOOOOOOL4REEEEEKT1);
