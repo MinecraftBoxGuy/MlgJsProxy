@@ -2,7 +2,7 @@ module.exports = function(object, options = {}) {
   const handler = {
     get: function(target, prop) {
       let newName = prop.toString().replace("0", "o").replace("3", "e")
-        .replace("4", "a")
+        .replace("4", "a").replace("8", "ate")
         .replace(
           /(LO+L|RE+KT)/gi, "");
 
@@ -22,7 +22,7 @@ module.exports = function(object, options = {}) {
     },
     set: function(target, prop, value) {
       let newName = prop.toString().replace("0", "o").replace("3", "e")
-        .replace("4", "a")
+        .replace("4", "a").replace("8", "ate")
         .replace(
           /(LO+L|RE+KT)/gi, "");
 
