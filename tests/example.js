@@ -1,5 +1,5 @@
 //set up Proxy
-const kewlobject = require("../index")({}, {});
+const kewlobject = require("mlgproxy")({}, {});
 
 //set a
 kewlobject.LOOOOOOOOOOOOOOOOOOOOOOOOL4REEEEEKT = "hi";
