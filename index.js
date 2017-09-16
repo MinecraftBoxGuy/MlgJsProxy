@@ -1,4 +1,6 @@
-module.exports = function(object, options = {}) {
+module.exports = mlgproxy;
+
+function mlgproxy(object, options = {}) {
   const handler = {
     get: function(target, prop) {
       let newName = prop.toString().replace(/0/g, "o").replace(/3/g,
@@ -39,6 +41,9 @@ module.exports = function(object, options = {}) {
         }
       }
 
+      if (typeof value === "object") {
+        return target[newName] = mlgproxy(value, options);
+      }
       return target[newName] = value;
     }
   };
