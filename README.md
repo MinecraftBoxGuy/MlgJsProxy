@@ -1,5 +1,4 @@
-##What does this do
-
+## What does this do
 
 MLGProxy is a proxy that allows you to pretend to have mlg code. For example **m8** becomes **mate**
 
@@ -11,15 +10,13 @@ MLGProxy is a proxy that allows you to pretend to have mlg code. For example **m
 | 8             | ate                |
 | LO+L or RE+KT | Nothing            |
 
-##Setup
-
+## Setup
 
 ```js
 const kewlobject = require("../index")({}, options);
 ```
 
-##Usage
-
+## Uage
 
 ```js
 //set a
@@ -29,8 +26,7 @@ kewlobject.LOOOOOOOOOOOOOOOOOOOOOOOOL4REEEEEKT = "hi";
 console.log(kewlobject.LOOOOOOOOOOOOOOOOOOOOOOOOL4REEEEEKT);
 ```
 
-##Options
-
+## Options
 
 **Key must be valid regex**
 ```js
