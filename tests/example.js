@@ -14,7 +14,7 @@ const options = {
   }
 };
 
-const kewlerobject = require("../index")({}, options);
+const kewlerobject = require("mlgproxy")({}, options);
 
 //set aI
 kewlerobject.LOOOOOOOOOOOOOOOOOOOOOOOOL4REEEEEKT1 = "hi";
