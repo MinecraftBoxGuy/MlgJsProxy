@@ -2,7 +2,7 @@
   "name": "mlgproxy",
   "version": "1.0.4",
   "description": "A proxy to make your code look mlg",
-  "runKitExampleFilename": "./tests/example.js",
+  "runkitExampleFilename": "./tests/example.js",
   "main": "index.js",
   "directories": {
     "test": "tests"
