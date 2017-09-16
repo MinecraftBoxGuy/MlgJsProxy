@@ -1,6 +1,6 @@
 {
   "name": "mlgproxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A proxy to make your code look mlg",
   "main": "index.js",
   "directories": {
