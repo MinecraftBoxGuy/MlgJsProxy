@@ -1,0 +1,28 @@
+{
+  "name": "mlgproxy",
+  "version": "1.0.0",
+  "description": "A proxy to make your code look mlg",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node ./examples/example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinecraftBoxGuy/MlgJsProxy.git"
+  },
+  "keywords": [
+    "Proxy",
+    "MLG",
+    "Fun",
+    "Cool"
+  ],
+  "author": "TrueBoxGuy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MinecraftBoxGuy/MlgJsProxy/issues"
+  },
+  "homepage": "https://github.com/MinecraftBoxGuy/MlgJsProxy#readme"
+}
