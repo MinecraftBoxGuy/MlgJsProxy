@@ -1,6 +1,6 @@
 {
   "name": "mlgproxy",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A proxy to make your code look mlg",
   "runkitExampleFilename": "./tests/example.js",
   "main": "index.js",
