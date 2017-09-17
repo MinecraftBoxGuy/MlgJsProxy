@@ -3,11 +3,7 @@ module.exports = mlgproxy;
 function mlgproxy(object, options = {}) {
   const handler = {
     get: function(target, prop) {
-      let newName = prop.toString().replace(/0/g, "o").replace(/3/g,
-          "e")
-        .replace(/4/g, "a").replace(/8/g, "ate")
-        .replace(
-          /(LO+L|RE+KT)/gi, "");
+      let newName = prop.toString();
 
       if (options.replace && typeof options.replace === "object") {
 
@@ -20,6 +16,11 @@ function mlgproxy(object, options = {}) {
           }
         }
       }
+
+      newName = newName.replace(/0/g, "o").replace(/3/g, "e")
+        .replace(/4/g, "a").replace(/8/g, "ate")
+        .replace(
+          /(LO+L|RE+KT)/gi, "");
 
       if (typeof target[newName] === "object") {
         return mlgproxy(target[newName], options);
@@ -28,10 +29,7 @@ function mlgproxy(object, options = {}) {
       return target[newName];
     },
     set: function(target, prop, value) {
-      let newName = prop.toString().replace(/0/g, "o").replace(/3/g, "e")
-        .replace(/4/g, "a").replace(/8/g, "ate")
-        .replace(
-          /(LO+L|RE+KT)/gi, "");
+      let newName = prop.toString();
 
       if (options.replace && typeof options.replace === "object") {
 
@@ -44,6 +42,13 @@ function mlgproxy(object, options = {}) {
           }
         }
       }
+
+      newName = newName.replace(/0/g, "o").replace(/3/g, "e")
+        .replace(/4/g, "a").replace(/8/g, "ate")
+        .replace(
+          /(LO+L|RE+KT)/gi, "");
+
+
 
       return target[newName] = value;
     }
