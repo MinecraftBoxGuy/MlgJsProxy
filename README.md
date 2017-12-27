@@ -25,7 +25,7 @@ const kewlobject = require("mlgproxy")({}, options);
 kewlobject.LOOOOOOOOOOOOOOOOOOOOOOOOL4REEEEEKT = "hi";
 
 //get a
-console.log(kewlobject.LOOOOOOOOOOOOOOOOOOOOOOOOL4REEEEEKT);
+console.log(kewlobject.a);
 ```
 
 ## Options
